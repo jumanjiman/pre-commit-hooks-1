@@ -59,6 +59,13 @@
   language: ruby
   types: ['markdown']
 
+- id: proselint
+  name: Check English prose in docs
+  description: Check English prose in docs
+  entry: proselint
+  language: python
+  types: ['text']
+
 - id: reek
   name: Find ruby code smells
   description: Use reek to find ruby code smells

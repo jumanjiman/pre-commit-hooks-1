@@ -15,6 +15,7 @@ Git hooks to integrate with [pre-commit](http://pre-commit.com).
   * [`git-check`](#git-check)
   * [`git-dirty`](#git-dirty)
   * [`markdownlint`](#markdownlint)
+  * [`proselint`](#proselint)
   * [`reek`](#reek)
   * [`require-ascii`](#require-ascii)
   * [`rubocop`](#rubocop)
@@ -42,6 +43,7 @@ Add to `.pre-commit-config.yaml` in your git repo:
         - id: git-check  # Configure in .gitattributes
         - id: git-dirty  # Configure in .gitignore
         - id: markdownlint # Configure in .mdlrc
+        - id: proselint
         - id: reek
         - id: require-ascii
         - id: rubocop
@@ -248,6 +250,26 @@ For an annotated example of overrides, see in this project:
 
 * [`.mdlrc`](.mdlrc)
 * [`ci/jumanjistyle.rb`](ci/jumanjistyle.rb)
+
+
+### `proselint`
+
+**What it does**
+
+Checks English prose to improve readability of technical writing.
+
+**More info**
+
+https://github.com/amperser/proselint checks English prose to
+help writers make technical documents readable by all users,
+including English-as-a-second-language readers.
+
+See [_Linting science prose and the science of prose linting_](https://suchow.io/assets/docs/pacer2016proselint.pdf)
+for an in-depth discussion of prose style for technical writing.
+
+Plugins are available for
+[numerous editors](https://github.com/amperser/proselint#plugins-for-other-software),
+including `vim`, Atom, Sublime, and VSCode.
 
 
 ### `reek`

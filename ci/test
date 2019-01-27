@@ -41,6 +41,7 @@ try_precommit() {
     bundler-audit
     fasterer
     markdownlint
+    proselint
     reek
     rubocop
     script-must-have-extension

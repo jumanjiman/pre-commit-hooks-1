@@ -1,3 +1,6 @@
+"""
+Install prereqs for python-based hooks.
+"""
 from setuptools import setup
 
 setup(
@@ -12,6 +15,7 @@ setup(
 
     install_requires=[
         'chardet',
+        'proselint==0.10.2',  # https://pypi.org/project/proselint/
     ],
 
     scripts=[
